@@ -15,7 +15,8 @@ import com.aliengnss.inventory.services.ICategoryService;
 
 @RestController
 @RequestMapping("/api/v1/categories")
-public class CategoryController {
+public class
+CategoryController {
 
     // @Autowired
     private final ICategoryService categoryService;
