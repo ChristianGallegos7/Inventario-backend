@@ -1,6 +1,7 @@
 package com.aliengnss.inventory.model;
 
 import java.io.Serializable;
+import java.util.Date;
 
 
 import jakarta.persistence.Entity;
@@ -21,6 +22,7 @@ public class Category implements Serializable {
     private Long id;
     private String name;
     private String description;
-
+    private Date fechaCreacion;
+    private Date fechaActualizacion;
 
 }
