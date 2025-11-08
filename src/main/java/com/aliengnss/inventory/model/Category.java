@@ -24,5 +24,4 @@ public class Category implements Serializable {
     private String description;
     private Date fechaCreacion;
     private Date fechaActualizacion;
-
 }
