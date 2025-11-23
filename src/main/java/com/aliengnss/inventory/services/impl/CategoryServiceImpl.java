@@ -4,12 +4,12 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
-import com.aliengnss.inventory.dtos.DtoCategoryCreate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.aliengnss.inventory.dao.ICategoryDao;
+import com.aliengnss.inventory.dtos.DtoCategoryCreate;
 import com.aliengnss.inventory.model.Category;
 import com.aliengnss.inventory.services.ICategoryService;
 
@@ -35,8 +35,8 @@ public class CategoryServiceImpl implements ICategoryService {
     @Override
     public Category createCategory(DtoCategoryCreate dto) {
         Category newCategory = new Category();
-        newCategory.setName(dto.getName());
-        newCategory.setDescription(dto.getDescription());
+        newCategory.setNombre(dto.getName());
+        newCategory.setDescripcion(dto.getDescription());
         newCategory.setFechaCreacion(new Date());
         return categoryDao.save(newCategory);
     }

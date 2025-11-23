@@ -3,7 +3,6 @@ package com.aliengnss.inventory.model;
 import java.io.Serializable;
 import java.util.Date;
 
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,8 +19,8 @@ public class Category implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
-    private String description;
+    private String nombre;
+    private String descripcion;
     private Date fechaCreacion;
     private Date fechaActualizacion;
 }
